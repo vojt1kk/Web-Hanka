@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f0ede1;
+    font-family: "Quicksand", sans-serif;
+    padding-top: 10vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #c4edd1;
+    width: 100%;
+    height: 10vh;
+}
+
+header.shrink {
+    background-color: #c4edd1;
+    border-radius: 30px;
+    padding: 10px 30px;
+    margin: 10px auto;
+    max-width: 800px;
+    height: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+
+nav{
+    width: 30%;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #C166C0;
+}
+
+h1{
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #C166C0
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #C166C0;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+nav ul li{
+    font-size: 2rem;
+}
+
+/* Shrinking styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background 0.3s, box-shadow 0.3s, border-radius 0.3s, width 0.3s, transform 0.3s;
+}
+
+header.shrink {
+    width: 70%;
+    left: 0;
+    right: 0;
+    top: 2vh;
+    margin: 0 auto;
+    border-radius: 50px;
+    background-color: rgba(196, 237, 209, 0.95);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-around;
+}
+
+header.shrink nav{
+    width: 50%;
+}
+
+header.shrink nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+header.shrink h1,
+header.shrink nav ul li {
+    transition: none;
+}
+
+header.shrink h1 {
+    font-size: 1.8rem;
+}
+
+header.shrink nav ul li {
+    font-size: 1.6rem;
+}
+
+.hero{
+    background-image: url("images/index.png");
+        background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+    margin-bottom: -20vh;
+}
+
+.o-mne{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35vh;
+    width: 100%;
+    margin-bottom: 5vw;
+}
+
+.logo{
+    margin-left: 10vw;
+    background-color: #C166C0;
+    height: 40vh;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-image: url("images/logo.png");
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+.o-mne-text{
+    width: 50%;
+    background-color: #c4edd1;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5vw;
+    border-top-left-radius: 2vw;
+    border-bottom-left-radius: 2vw;
+    padding-right: 3vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.o-mne-text-pokracovani{
+    margin: auto;
+    width: 75%;
+    background-color: #c4edd1;
+    height: 40vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5vw;
+    border-radius: 2vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.ukazky{
+    background-color: #c4edd1;
+    width: fit-content;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: auto;
+    margin-bottom: 15vh;
+}
+
+.ukazka{
+    width: 20vw;
+}
+
+footer{
+    background-color: #E7DBAD;
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bx-caret-down{
+    color: #C166C0;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    h1{
+        font-size: 2.2rem;
+    }
+    
+    h2{
+        font-size: 2rem;
+    }
+    
+    p{
+        font-size: 1rem;
+    }
+    
+    nav ul li{
+        font-size: 2rem;
+    }
+
+    .hero{
+        background-image: url("images/index-tablet.png");
+        width: 100%;
+        margin-bottom: 10vh;
+    }
+
+    .ukazky{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .ukazka{
+        width: 38vw;
+    }
+}

@@ -1,0 +1,128 @@
+/* =========================
+   HEADER STYLES
+   ========================= */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background 0.3s, box-shadow 0.3s, border-radius 0.3s, width 0.3s, transform 0.3s;
+}
+
+/* Shrinking Navbar Styles */
+header.shrink {
+    width: 70%;
+    left: 0;
+    right: 0;
+    top: 2vh;
+    margin: 0 auto;
+    border-radius: 50px;
+    background-color: rgba(196, 237, 209, 0.95);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-around;
+}
+
+header.shrink nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+header.shrink h1,
+header.shrink nav ul li {
+    transition: none;
+}
+
+header.shrink h1 {
+    font-size: 1.8rem;
+}
+
+header.shrink nav ul li {
+    font-size: 1.6rem;
+}
+
+header.shrink .dropdown {
+    transform: scale(0.9);
+}
+
+/* =========================
+   DROPDOWN STYLES
+   ========================= */
+.dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Dropdown menu (hidden by default) */
+.dropdown-menu {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: -50%;
+    background-color: #c4edd1;
+    display: grid;
+    grid-template-columns: column;
+    list-style: none;
+    border-radius: 10%;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* Dropdown menu (active/open) */
+.dropdown-menu.open,
+.dropdown:hover .dropdown-menu {
+    visibility: visible;
+    border-radius: 10%;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Dropdown menu items */
+.dropdown-menu li {
+    padding: 10px 20px;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu li a {
+    color: #C166C0;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+.dropdown-menu li:hover {
+    background-color: #a9dab8;
+    cursor: pointer;
+}
+
+/* Rounded corners for first and last items */
+.dropdown-menu li:first-child {
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+.dropdown-menu li:last-child {
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+/* =========================
+   DROPDOWN SHRINKING MODE
+   ========================= */
+header.shrink .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
