@@ -34,20 +34,21 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea fuga accusantium quasi omnis ex cum, repudiandae alias odit numquam veritatis, eos dolor! Repellat impedit ullam ab aliquid quaerat nostrum animi.</p>
         <br>
         <div class="buttons">
-            <button>Líčení</button>
-            <button>Kurzy</button>
+            <button onclick="document.getElementById('liceniSlideIn').scrollIntoView({behavior: 'smooth'})">Líčení</button>
+            <button onclick="document.getElementById('kurzySlideIn').scrollIntoView({behavior: 'smooth'})">Kurzy</button>
         </div>
     </div>
 
-    <div class="odstavec">
-        <h2>Líčení</h2>
+    <div class="odstavec" id="liceniSlideIn">
+        <h2 class="odstavec-nadpis">Líčení</h2>
+        <br>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit maxime commodi, nisi laudantium fugit facere alias voluptate dolores non temporibus illum! Consectetur deleniti dolore at recusandae, doloremque voluptate tempore assumenda.</p>
         <br>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure architecto incidunt labore exercitationem officiis unde molestiae maiores rem eos facilis pariatur qui inventore maxime, voluptatibus, at suscipit, alias consequuntur est.</p>
     </div>
-    
-    <div class="odstavec">
-        <h2>Kurzy</h2>
+    <div class="odstavec" id="kurzySlideIn">
+        <h2 class="odstavec-nadpis">Kurzy</h2>
+        <br>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus perferendis quibusdam consectetur ipsa ut hic, explicabo tenetur atque reiciendis magni suscipit corrupti non assumenda corporis qui expedita? Cum, quam doloribus.</p>
         <br>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam perspiciatis ipsam natus, rem maiores ratione enim officia impedit corrupti mollitia culpa voluptatum quidem reiciendis voluptatibus consequatur ea assumenda soluta recusandae.</p>
@@ -55,7 +56,31 @@
     <script src="script.js"></script>
 
     <footer>
-        <p>© 2025 Hanina</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Kontakt</h3>
+                <p>Hana Novotná</p>
+                <p>Email: hanina@email.cz</p>
+                <p>Tel: +420 123 456 789</p>
+            </div>
+            <div class="footer-section">
+                <h3>Služby</h3>
+                <p>Profesionální líčení</p>
+                <p>Kurzy líčení</p>
+                <p>Doučování angličtiny</p>
+            </div>
+            <div class="footer-section">
+                <h3>Sledujte mě</h3>
+                <div class="social-links">
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-tiktok'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Hanina - Všechna práva vyhrazena</p>
+        </div>
     </footer>
 </body>
 </html>
