@@ -1,19 +1,41 @@
-// Pro mobilní zobrazení
+// Unified dropdown and scrollable header logic
+
 document.addEventListener("DOMContentLoaded", function() {
+    // Dropdown menu logic
     const dropdown = document.querySelector(".dropdown");
     const menu = document.querySelector(".dropdown-menu");
 
-    // Proklik (pouze pro mobil)
-    dropdown.addEventListener("click", (e) => {
-        // Zabráníme, aby kliknutí hned zmizelo
-        e.stopPropagation();
-        menu.style.display = menu.style.display === "block" ? "none" : "block";
-    });
+    if (dropdown && menu) {
+        dropdown.addEventListener("click", (e) => {
+            e.stopPropagation();
+            menu.classList.toggle("open");
+        });
+        document.addEventListener("click", () => {
+            menu.classList.remove("open");
+        });
+    }
 
-    // Kliknutí mimo zavře menu
-    document.addEventListener("click", () => {
-        menu.style.display = "none";
-    });
+    // Scrollable header shrink effect for all .header elements
+    const headers = document.querySelectorAll('.header');
+    if (headers.length > 0) {
+        let ticking = false;
+        function handleScroll() {
+            headers.forEach(header => {
+                if (window.scrollY > 50) {
+                    header.classList.add('shrink');
+                } else {
+                    header.classList.remove('shrink');
+                }
+            });
+            ticking = false;
+        }
+        window.addEventListener('scroll', function () {
+            if (!ticking) {
+                window.requestAnimationFrame(handleScroll);
+                ticking = true;
+            }
+        });
+    }
 });
 
 //shrink---------------------------
@@ -50,5 +72,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.addEventListener('click', function () {
         dropdownMenu.classList.remove('open');
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const closeMenu = document.getElementById('close-menu');
+
+    hamburger.addEventListener('click', () => {
+        mobileMenu.classList.add('open');
+    });
+
+    closeMenu.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
     });
 });

@@ -1,0 +1,32 @@
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+
+
+.hero-sluzby{
+    background-image: url("images/hero-sluzby.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+    margin-bottom: -60vh;
+}
+
+.sluzby{
+    margin-left: 10vw;
+    width: 30%;
+    margin-bottom: 50vh;
+}
+
+.buttons{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+}

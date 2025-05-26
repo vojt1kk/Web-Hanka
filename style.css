@@ -1,3 +1,6 @@
+/* =========================
+   RESET & BASE STYLES
+   ========================= */
 *{
     margin: 0;
     padding: 0;
@@ -9,29 +12,97 @@ body{
     padding-top: 10vh;
 }
 
-header{
+a{
+    text-decoration: none;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+/* =========================
+   HEADER STYLES
+   ========================= */
+.header{
+    position: relative;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #c4edd1;
     width: 100%;
     height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background 0.3s, box-shadow 0.3s, border-radius 0.3s, width 0.3s, transform 0.3s;
 }
 
-header.shrink {
-    background-color: #c4edd1;
-    border-radius: 30px;
+.header.shrink {
+    border-radius: 50px;
     padding: 10px 30px;
-    margin: 10px auto;
+    margin: 0 auto;
     max-width: 800px;
     height: auto;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 70%;
+    left: 0;
+    right: 0;
+    top: 2vh;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-around;
 }
 
+/* Header Color Variations */
+.header-pink {
+    background-color: #C166C0;
+}
 
+.header-pink.shrink {
+    background-color: rgba(193, 102, 192, 0.95);
+}
+
+.header-green {
+    background-color: #c4edd1;
+}
+
+.header-green.shrink {
+    background-color: rgba(196, 237, 209, 0.95);
+}
+
+/* Header Text Colors */
+.header-pink a,
+.header-pink h1,
+.header-pink h2 {
+    color: #c4edd1;
+}
+
+.header-green a,
+.header-green h1,
+.header-green h2 {
+    color: #C166C0;
+}
+
+/* Header Typography */
+h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* =========================
+   NAVIGATION STYLES
+   ========================= */
 nav{
     width: 30%;
+}
+
+.header.shrink nav{
+    width: 45%;
 }
 
 nav ul{
@@ -42,97 +113,58 @@ nav ul{
 
 nav ul li{
     list-style: none;
-}
-
-a{
-    text-decoration: none;
-    color: #C166C0;
-}
-
-h1{
-    font-size: 2.2rem;
-    font-weight: 600;
-    color: #C166C0
-}
-
-h2{
-    font-size: 2rem;
-    font-weight: 600;
-    color: #C166C0;
-}
-
-p{
-    font-size: 1.5rem;
-}
-
-nav ul li{
     font-size: 2rem;
 }
 
-/* Shrinking styles */
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    transition: background 0.3s, box-shadow 0.3s, border-radius 0.3s, width 0.3s, transform 0.3s;
+.header-green .bx-caret-down {
+    color: #C166C0;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
-header.shrink {
-    width: 70%;
-    left: 0;
-    right: 0;
-    top: 2vh;
-    margin: 0 auto;
-    border-radius: 50px;
-    background-color: rgba(196, 237, 209, 0.95);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: space-around;
+.header-pink .bx-caret-down {
+    color: #c4edd1;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
-header.shrink nav{
-    width: 50%;
-}
-
-header.shrink nav ul{
-    display: flex;
-    justify-content: space-between;
-}
-
-header.shrink h1,
-header.shrink nav ul li {
-    transition: none;
-}
-
-header.shrink h1 {
-    font-size: 1.8rem;
-}
-
-header.shrink nav ul li {
-    font-size: 1.6rem;
-}
-
+/* =========================
+   HERO SECTION
+   ========================= */
 .hero{
     background-image: url("images/index.png");
-        background-size: cover;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
     height: 80vh;
-    margin-bottom: -20vh;
+    margin-bottom: -60vh;
 }
 
-.o-mne{
+button {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #C166C0;
+    height: 4vh;
+    color: #c4edd1;
+    padding: 0.5vw 1vw;
+    border: none;
+    border-radius: 2vh;
+    display: inline-block;
+    cursor: pointer;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 35vh;
-    width: 100%;
-    margin-bottom: 5vw;
+    justify-content: center;
+    outline-color: white;
+    outline-width: 20px;
+    outline-offset: 3px;
 }
 
+/* =========================
+   LOGO SECTION
+   ========================= */
 .logo{
     margin-left: 10vw;
     background-color: #C166C0;
@@ -143,47 +175,37 @@ header.shrink nav ul li {
     background-position: center;
     background-size: 70%;
     background-repeat: no-repeat;
+    margin-bottom: 15vh;
 }
 
-.o-mne-text{
-    width: 50%;
-    background-color: #c4edd1;
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 5vw;
-    border-top-left-radius: 2vw;
-    border-bottom-left-radius: 2vw;
-    padding-right: 3vw;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-}
-
-.o-mne-text-pokracovani{
+/* =========================
+   ABOUT SECTION
+   ========================= */
+.o-mne{
     margin: auto;
-    width: 75%;
+    width: 74vw;
     background-color: #c4edd1;
-    height: 40vh;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    height: fit-content;
+    padding: 3.5vh 5vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 5vw;
     border-radius: 2vw;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+    text-align: justify;
 }
 
+/* =========================
+   GALLERY SECTION
+   ========================= */
 .ukazky{
     background-color: #c4edd1;
     width: fit-content;
-    padding: 15px;
+    padding: 0.8vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 0.8vw;
     margin: auto;
     margin-bottom: 15vh;
 }
@@ -192,6 +214,21 @@ header.shrink nav ul li {
     width: 20vw;
 }
 
+.bx-caret-down {
+    color: #C166C0;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.bx-home{
+    font-size: 2rem;
+    color: #c4edd1;
+    cursor: pointer;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
 footer{
     background-color: #E7DBAD;
     height: 20vh;
@@ -201,27 +238,93 @@ footer{
     align-items: center;
 }
 
-.bx-caret-down{
-    color: #C166C0;
+/*=============================
+    hamburger menu
+=============================*/
+/* === Hamburger Button === */
+.hamburger {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
     font-size: 2rem;
+    background: none;
+    border: none;
+    color: #C166C0;
     cursor: pointer;
 }
 
-@media (max-width: 800px) {
+/* === Mobile Menu === */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 70%;
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    margin-top: 4rem;
+    width: 100%;
+}
+
+.mobile-menu li {
+    margin: 1rem 0;
+    font-size: 1.8rem;
+}
+
+.mobile-menu a {
+    color: #C166C0;
+}
+
+.bx-menu{
+    display: none;
+}
+
+/* === Close Button === */
+.close-btn {
+    align-self: flex-end;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #C166C0;
+    cursor: pointer;
+}
+/* =========================
+   RESPONSIVE STYLES
+   ========================= */
+@media (max-width: 800px) and (min-width: 401px) {
     h1{
-        font-size: 2.2rem;
+        font-size: 4vw;
     }
     
     h2{
-        font-size: 2rem;
+        font-size: 3.5vw;
     }
     
     p{
-        font-size: 1rem;
+        font-size: 2.5vw;
     }
     
     nav ul li{
-        font-size: 2rem;
+        font-size: 3.5vw;
+    }
+
+    nav{
+        width: 35vw;
+    }
+
+    .bx-caret-down{
+        font-size: 3.5vw;
     }
 
     .hero{
@@ -236,5 +339,28 @@ footer{
     }
     .ukazka{
         width: 38vw;
+    }
+
+    .hamburger{
+        display: none;
+    }
+}
+
+@media(max-width: 400px){
+    nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .mobile-menu.open {
+        display: flex;
+    }
+
+    .ukazky{
+        display: flex;
+        flex-direction: column;
     }
 }
