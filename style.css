@@ -20,6 +20,11 @@ p{
     font-size: 1.5rem;
 }
 
+q{
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
 /* =========================
    HEADER STYLES
    ========================= */
@@ -136,6 +141,10 @@ nav ul li{
     cursor: pointer;
 }
 
+.hamburger{
+    display: none;
+}
+
 /* =========================
    HERO SECTION
    ========================= */
@@ -229,9 +238,28 @@ button:hover {
     margin-bottom: 15vh;
 }
 
+.ukazky-fialova{
+    background-color: #B38FEE;
+    width: fit-content;
+    padding: 0.8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8vw;
+    margin: auto;
+    margin-bottom: 15vh;
+}
+
 .ukazka{
     width: 20vw;
     aspect-ratio: 1/1;
+}
+
+.ukazka-reference{
+    width: 20vw;
+    aspect-ratio: 1/1;
+    border-color: white;
+    border-style: solid;
 }
 
 .bx-caret-down {

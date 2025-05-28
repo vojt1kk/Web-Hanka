@@ -1,0 +1,92 @@
+.hero-uci{
+    width: 100%;
+    height: 80vh;
+    background-image: url("images/uci.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: -20vh;
+}
+
+.nav-uci{
+    width: 50%;
+}
+
+.nav-uci ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.uceni{
+    background-color: #c4edd1;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    height: fit-content;
+    margin-bottom: 10vh;
+    position: relative;
+    z-index: 1;
+}
+
+.uceni-nadpis{
+    color: #B38FEE;
+}
+
+.tabulka {
+    width: 80%;
+    margin: 5vh auto;
+    background-color: #c4edd1;
+    border-radius: 2vw;
+    padding: 2vh 2vw;
+    box-shadow: 0 0.4vw 1.5vw rgba(0, 0, 0, 0.1);
+}
+
+.tabulka h2 {
+    color: #C166C0;
+    text-align: center;
+    margin-bottom: 3vh;
+    font-size: 2.5vw;
+}
+
+.tabulka table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2vh 0;
+    border: 0.2vw solid #D43ED2;
+}
+
+.tabulka th {
+    background-color: #C166C0;
+    color: #c4edd1;
+    padding: 1.5vh 1.5vw;
+    text-align: left;
+    font-size: 1.5vw;
+    border: 0.2vw solid #D43ED2;
+}
+
+.tabulka td {
+    padding: 1.2vh 1.2vw;
+    font-size: 1.2vw;
+    border: 0.2vw solid #D43ED2;
+}
+
+.tabulka tr:hover {
+    background-color: rgba(196, 237, 209, 0.5);
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+.home i {
+    font-size: 2rem;
+    color: #C166C0;
+}
+
+.home h1 {
+    margin: 0;
+}
