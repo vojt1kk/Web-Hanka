@@ -21,6 +21,16 @@
     padding-top: 5vw;
     padding-bottom: 5vw;
     border-radius: 2vw;
+    position: relative;
+}
+
+.hanka-kontakt{
+    width: 13vw;
+    position: absolute;
+    bottom: -5vh;
+    left: -7vw;
+    transform: rotate(-10deg);
+    border-radius: 50%;
 }
 
 .udaje h2{
