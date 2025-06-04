@@ -140,3 +140,16 @@ header.shrink .dropdown-menu {
     flex-direction: column;
     align-items: stretch;
 }
+
+h1 {
+    font-size: 1.8vw;
+}
+h2 {
+    font-size: 1.6vw;
+}
+p {
+    font-size: 1.1vw;
+}
+q {
+    font-size: 1.1vw;
+}

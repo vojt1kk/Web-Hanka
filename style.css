@@ -17,11 +17,11 @@ a{
 }
 
 p{
-    font-size: 1.5rem;
+    font-size: 1.1vw;
 }
 
 q{
-    font-size: 1.5rem;
+    font-size: 1.1vw;
     font-style: italic;
 }
 
@@ -33,7 +33,7 @@ q{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 10vh;
     position: fixed;
     top: 0;
@@ -90,12 +90,12 @@ q{
 
 /* Header Typography */
 h1 {
-    font-size: 2.2rem;
+    font-size: 1.8vw;
     font-weight: 600;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.6vw;
     font-weight: 600;
 }
 
@@ -131,18 +131,14 @@ nav ul li{
 
 .header-green .bx-caret-down {
     color: #C166C0;
-    font-size: 2rem;
+    font-size: 1.8vw;
     cursor: pointer;
 }
 
 .header-pink .bx-caret-down {
     color: #c4edd1;
-    font-size: 2rem;
+    font-size: 1.8vw;
     cursor: pointer;
-}
-
-.hamburger{
-    display: none;
 }
 
 /* =========================
@@ -187,30 +183,23 @@ button:hover {
    LOGO SECTION
    ========================= */
 .logo{
-    margin-left: 10vw;
-    height: 40vh;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    background-image: url("images/logo.png");
-    background-position: center;
-    background-size: 70%;
-    background-repeat: no-repeat;
-    margin-bottom: 15vh;
+    width: 30vw;
 }
 
 /* =========================
    ABOUT SECTION
    ========================= */
 .o-mne{
+    padding: 0;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 5vw;
+    justify-content: space-between;
+    width: 95%;
+    margin-left: auto;
 }
 
 .o-mne-text{
-    margin: auto;
-    width: 74vw;
+    width: 60vw;
     background-color: #c4edd1;
     height: fit-content;
     padding: 3.5vh 5vw;
@@ -365,102 +354,22 @@ footer{
         justify-content: center;
     }
 }
-
-/*=============================
-    hamburger menu
-=============================*/
-/* === Hamburger Button === */
-.hamburger {
-    position: absolute;
-    right: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2rem;
-    background: none;
-    border: none;
-    color: #C166C0;
-    cursor: pointer;
-}
-
-/* === Mobile Menu === */
-.mobile-menu {
-    display: none;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 70%;
-    background-color: #fff;
-    padding: 2rem;
-    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 999;
-}
-
-.mobile-menu ul {
-    list-style: none;
-    margin-top: 4rem;
-    width: 100%;
-}
-
-.mobile-menu li {
-    margin: 1rem 0;
-    font-size: 1.8rem;
-}
-
-.mobile-menu a {
-    color: #C166C0;
-}
-
-.bx-menu{
-    display: none;
-}
-
-/* === Close Button === */
-.close-btn {
-    align-self: flex-end;
-    font-size: 2rem;
-    background: none;
-    border: none;
-    color: #C166C0;
-    cursor: pointer;
-}
 /* =========================
    RESPONSIVE STYLES
    ========================= */
 @media (max-width: 800px) and (min-width: 401px) {
-    h1{
-        font-size: 4vw;
-    }
-    
-    h2{
-        font-size: 3.5vw;
-    }
-    
-    p{
-        font-size: 2.5vw;
-    }
-    
     nav ul li{
         font-size: 3.5vw;
     }
-
     nav{
         width: 35vw;
     }
-
     .bx-caret-down{
         font-size: 3.5vw;
     }
-
     .hero{
-        background-image: url("images/index-tablet.png");
-        width: 100%;
-        margin-bottom: 10vh;
+        display: none;
     }
-
     .ukazky{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -468,25 +377,18 @@ footer{
     .ukazka{
         width: 38vw;
     }
-
-    .hamburger{
-        display: none;
-    }
 }
 
 @media(max-width: 400px){
     nav {
         display: none;
     }
-
     .hamburger {
         display: block;
     }
-
     .mobile-menu.open {
         display: flex;
     }
-
     .ukazky{
         display: flex;
         flex-direction: column;
