@@ -377,6 +377,14 @@ footer{
         font-size: 2vw;
     }
 
+    .header-green.shrink h1{
+        font-size: 3vw;
+    }
+
+    .header-green.shrink ul li{
+        font-size: 2.8vw;
+    }
+
     .header-green .bx-caret-down {
         font-size: 3vw;
     }
@@ -389,8 +397,19 @@ footer{
         font-size: 2vw;
     }
 
-    .header.shrink nav{
-        width: 50%;
+    .header.shrink {
+        width: 90%;
+        padding: 8px 15px;
+        border-radius: 30px;
+        top: 1vh;
+    }
+
+    .header.shrink nav {
+        width: 60%;
+    }
+
+    .header.shrink .logo {
+        width: 35vw;
     }
 
     .o-mne{
@@ -404,7 +423,7 @@ footer{
     }
 
     .o-mne-text{
-        border-radius: 2vw;
+        border-radius: 4vw;
         width: 78.39vw;
         padding-top: 15vh;
         margin-top: -25vw;
@@ -420,18 +439,101 @@ footer{
 }
 
 @media(max-width: 400px){
+    h1{
+        font-size: 6.5vw;
+    }
+
+    h2{
+        font-size: 5.5vw;
+    }
+
+    nav ul li{
+        font-size: 6vw;
+    }
+
+    .footer-section h3{
+        font-size: 5vw;
+    }
+
+    .footer-section p{
+        font-size: 4.5vw;
+    }
+
+    footer .footer-bottom p {
+        font-size: 3.5vw;
+    }
+
+    .footer-section a{
+        font-size: 4.5vw;
+    }
+
+    p{
+        font-size: 4.5vw;
+    }
+
+
+    .header .bx-caret-down {
+        font-size: 6vw;
+    }
+
+    nav{
+        width: 50vw;
+    }
+
+    .o-mne{
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .o-mne-text{
+        border-radius: 5vw;
+        width: 78.39vw;
+        padding-top: 15vh;
+        margin-top: -35vw;
+        text-align: center;
+    }
+
+    .logo{
+        z-index: 1;
+        width: 60vw;
+    }
+
     .footer-content {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-    
-    nav {
-        display: none;
-    }
 
     .ukazky{
         display: flex;
         flex-direction: column;
+    }
+
+    .ukazka{
+        width: 77vw;
+    }
+
+    .header.shrink {
+        width: 95%;
+        height: 8vh;
+        padding: 10px 15px;
+        border-radius: 40px;
+        top: 2vh;
+    }
+
+    .header.shrink nav {
+        width: 65%;
+    }
+
+    .header.shrink h1{
+        font-size: 6vw;
+    }
+
+    .header.shrink nav ul li{
+        font-size: 6vw;
+    }
+
+    .header.shrink .logo {
+        width: 45vw;
     }
 }

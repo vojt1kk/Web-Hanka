@@ -17,12 +17,12 @@ header.shrink nav ul {
 }
 
 header.shrink h1 {
-    font-size: 1.8rem;
+    font-size: 1.6vw;
     transition: none;
 }
 
 header.shrink nav ul li {
-    font-size: 1.6rem;
+    font-size: 1.4vw;
     transition: none;
 }
 
