@@ -119,7 +119,7 @@ button {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 10vh;
     position: fixed;
     top: 0;
@@ -171,6 +171,23 @@ button {
 .header-green a,
 .header-green h1,
 .header-green h2 {
+    color: #C166C0;
+}
+
+/* Header Icons */
+.header-pink .bx-home {
+    color: #c4edd1;
+}
+
+.header-green .bx-home {
+    color: #C166C0;
+}
+
+.header-pink .bx-caret-down {
+    color: #c4edd1;
+}
+
+.header-green .bx-caret-down {
     color: #C166C0;
 }
 
@@ -433,8 +450,34 @@ footer{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .ukazky-fialova{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
     .ukazka{
         width: 38vw;
+    }
+
+    .header-pink h1,
+    .header-green h1 {
+        font-size: 3.5vw;
+    }
+
+    .header-pink ul li,
+    .header-green ul li {
+        font-size: 3vw;
+    }
+
+    .header-pink.shrink h1,
+    .header-green.shrink h1 {
+        font-size: 3vw;
+    }
+
+    .header-pink.shrink ul li,
+    .header-green.shrink ul li {
+        font-size: 2.8vw;
     }
 }
 
@@ -509,6 +552,11 @@ footer{
         flex-direction: column;
     }
 
+    .ukazky-fialova{
+        display: flex;
+        flex-direction: column;
+    }
+
     .ukazka{
         width: 77vw;
     }
@@ -535,5 +583,25 @@ footer{
 
     .header.shrink .logo {
         width: 45vw;
+    }
+
+    .header-pink h1,
+    .header-green h1 {
+        font-size: 6.5vw;
+    }
+
+    .header-pink ul li,
+    .header-green ul li {
+        font-size: 6vw;
+    }
+
+    .header-pink.shrink h1,
+    .header-green.shrink h1 {
+        font-size: 6vw;
+    }
+
+    .header-pink.shrink ul li,
+    .header-green.shrink ul li {
+        font-size: 6vw;
     }
 }
