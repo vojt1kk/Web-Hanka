@@ -30,7 +30,15 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    height: 30vh;
+    height: fit-content;
+    width: 50vw;
+}
+
+.ukazka-reference{
+    width: 20vw;
+    aspect-ratio: 1/1;
+    border-color: white;
+    border-style: solid;
 }
 
 h1 {
@@ -44,4 +52,69 @@ p {
 }
 q {
     font-size: 1.1vw;
+}
+
+/* Responsive Styles */
+@media (max-width: 800px) and (min-width: 401px) {
+    h1{
+        font-size: 3.5vw;
+    }
+
+    h2{
+        font-size: 3vw;
+    }
+
+    q{
+        font-size: 2vw;
+    }
+
+    .recenze{
+        width: 90vw;
+        flex-direction: column;
+        gap: 3vh;
+        padding: 3vh 4vw;
+        border-radius: 3vw;
+    }
+
+    .recenze-text{
+        width: 90%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .ukazka-reference{
+        width: 40vw;
+    }
+}
+
+@media (max-width: 400px) {
+    h1{
+        font-size: 6.5vw;
+    }
+
+    h2{
+        font-size: 5.5vw;
+    }
+
+    q{
+        font-size: 4.5vw;
+    }
+
+    .recenze{
+        width: 95vw;
+        flex-direction: column;
+        gap: 3vh;
+        padding: 3vh 4vw;
+        border-radius: 4vw;
+    }
+
+    .recenze-text{
+        width: 95%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .ukazka-reference{
+        width: 60vw;
+    }
 }

@@ -241,17 +241,27 @@ ul li{
 @media (max-width: 400px) {
     .hero-sluzby {
         height: 60vh;
-        margin-bottom: 3vh;
+        margin-bottom: -15vh;
+        position: static;
     }
     
     .sluzby {
-        width: 85%;
-        margin-left: 2vw;
-        padding: 2vh 1.5vw;
+        width: 90vw;
+        margin: 0 auto;
+        position: static;
+        top: auto;
+        left: auto;
+        transform: none;
+        padding: 3vh 4vw;
+        border-radius: 5vw;
+        z-index: auto;
+        text-align: center;
     }
 
     .sluzby h2 {
         font-size: 5.5vw;
+        text-align: center;
+        margin-bottom: 2vh;
     }
 
     .sluzby p {
@@ -259,77 +269,113 @@ ul li{
     }
 
     .liceni {
-        flex-direction: column;
-        width: 95vw;
-        gap: 2vw;
-        padding: 2vh 0;
+        flex-direction: column-reverse;
+        width: 90vw;
+        gap: 4vw;
+        padding: 3vh 0;
+        margin: 0 auto 5vh auto;
+        border-radius: 5vw;
     }
 
     .liceni-odstavec {
         width: 90vw;
-        padding: 2vh 3vw;
+        padding: 0 3vw;
     }
 
     .liceni-fotka {
-        width: 60vw;
+        width: 70vw;
+        margin: 0 auto;
     }
 
     .liceni-odstavec h2 {
         font-size: 5.5vw;
+        text-align: center;
+        margin-bottom: 2vh;
+    }
+
+    .liceni-odstavec ul {
+        padding-left: 6vw;
     }
 
     .liceni-odstavec ul li {
         font-size: 4.5vw;
+        margin-bottom: 1vh;
     }
 
     .tabulka {
         width: 95vw;
-        padding: 2vh 2vw;
-        border-radius: 5vw;
+        padding: 1vh 2vw;
+        border-radius: 4vw;
+        margin: 2vh auto;
+        background-color: #c4edd1;
+        box-shadow: 0 0.8vw 2.5vw rgba(0, 0, 0, 0.2);
     }
 
     .tabulka h2 {
-        font-size: 5.5vw;
-        margin-bottom: 2vh;
+        font-size: 5vw;
+        margin-bottom: 1.5vh;
+        text-align: center;
+        color: #C166C0;
     }
 
-    .tabulka th {
-        font-size: 4.5vw;
-        padding: 1vh 1vw;
+    .table-container {
+        overflow-x: auto;
+        width: 100%;
     }
 
-    .tabulka td {
-        font-size: 4.5vw;
-        padding: 1vh 1vw;
+    .table-container table {
+        min-width: 600px;
+        width: auto;
+        border-collapse: collapse;
     }
 
-    .tabulka table {
+    .table-container th,
+    .table-container td {
+        font-size: 3.5vw;
+        padding: 1.5vh 2vw;
+        white-space: nowrap;
         border: 0.3vw solid #D43ED2;
     }
 
-    .tabulka th,
-    .tabulka td {
-        border: 0.3vw solid #D43ED2;
+    .table-container td:nth-child(3),
+    .table-container th:nth-child(3) {
+        min-width: 100px;
+        width: 25%;
+        text-align: center;
+        white-space: normal;
+    }
+
+    .table-container tr:hover {
+        background-color: rgba(196, 237, 209, 0.4);
+    }
+
+    .buttons {
+        gap: 2vw;
+        margin-top: 3vh;
     }
 
     .buttons button {
         font-size: 4.5vw;
         padding: 1.5vh 3vw;
+        width: 80%;
+        margin: auto;
     }
 
-    .header-pink h1 {
+    .nadpis-sluzby {
         font-size: 6.5vw;
+        margin: 10vh auto 2vh 5vw;
+        width: fit-content;
     }
 
-    .header-pink ul li {
-        font-size: 6vw;
+    .header-pink h1{
+        display: none;
     }
 
-    .header-pink.shrink h1 {
-        font-size: 6vw;
+    .header-pink nav{
+        width: 80%;
     }
 
-    .header-pink.shrink ul li {
-        font-size: 6vw;
+    .header-pink.shrink nav{
+        width: 85%;
     }
 } 
