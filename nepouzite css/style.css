@@ -1,7 +1,3 @@
-
-/* =============================================================
-   CSS z: style.css
-   ============================================================= */
 /* =========================
    RESET & BASE STYLES
    ========================= */
@@ -47,22 +43,6 @@ h2 {
 }
 
 /* Navigation Typography */
-
-.home{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1vw;
-}
-
-.nav2{
-    width: 20%;
-}
-
-.header.shrink .nav2{
-    width: 30%;
-}
-
 nav ul li {
     list-style: none;
     font-size: 1.6vw;
@@ -398,10 +378,6 @@ footer{
         font-size: 3vw;
     }
 
-    .header-pink nav{
-        width: 40vw;
-    }
-
     .footer-section h3{
         font-size: 2.5vw;
     }
@@ -547,14 +523,6 @@ footer{
         width: 50vw;
     }
 
-    .nav2{
-        width: 45vw;
-    }
-
-    .home h1{
-        display: none;
-    }
-
     .o-mne{
         flex-direction: column;
         margin: auto;
@@ -605,10 +573,6 @@ footer{
         width: 65%;
     }
 
-    .header.shrink .nav2 {
-        width: 50%;
-    }
-
     .header.shrink h1{
         font-size: 6vw;
     }
@@ -641,150 +605,3 @@ footer{
         font-size: 6vw;
     }
 }
-
-/* =============================================================
-   CSS z: dropdown.css
-   ============================================================= */
-/* Shrinking Navbar Styles */
-header.shrink {
-    width: 70%;
-    left: 0;
-    right: 0;
-    top: 2vh;
-    margin: 0 auto;
-    border-radius: 50px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: space-around;
-}
-
-header.shrink nav ul {
-    display: flex;
-    justify-content: space-between;
-}
-
-header.shrink h1 {
-    font-size: 1.6vw;
-    transition: none;
-}
-
-header.shrink nav ul li {
-    font-size: 1.4vw;
-    transition: none;
-}
-
-header.shrink .dropdown {
-    transform: scale(0.9);
-}
-
-/* =========================
-   DROPDOWN STYLES
-   ========================= */
-.dropdown {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-/* Base Dropdown Menu Styles */
-.dropdown-menu {
-    visibility: hidden;
-    position: absolute;
-    top: 100%;
-    left: -50%;
-    display: grid;
-    grid-template-columns: column;
-    list-style: none;
-    border-radius: 10%;
-    z-index: 1000;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    background-color: #c4edd1;
-}
-
-/* Dropdown Menu Items Base Styles */
-.dropdown-menu li {
-    padding: 10px 20px;
-    white-space: nowrap;
-    transition: background-color 0.3s ease;
-}
-
-.dropdown-menu li a {
-    color: #C166C0;
-    font-size: 1.6rem;
-    text-decoration: none;
-}
-
-/* Rounded corners for first and last items */
-.dropdown-menu li:first-child {
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
-}
-
-.dropdown-menu li:last-child {
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
-}
-
-/* Dropdown Menu Active State */
-.dropdown-menu.open,
-.dropdown:hover .dropdown-menu {
-    visibility: visible;
-    border-radius: 10%;
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Hover effect for dropdown menu items */
-.dropdown-menu li:hover {
-    background-color: #a9dab8;
-    cursor: pointer;
-}
-
-/* =========================
-   COLOR VARIATIONS
-   ========================= */
-/* Pink Header Theme */
-.header-pink .dropdown-menu {
-    background-color: #C166C0;
-}
-
-.header-pink .dropdown-menu li a {
-    color: #c4edd1;
-}
-
-.header-pink .dropdown-menu li:hover {
-    background-color: #a94ba8;
-}
-
-/* Green Header Theme */
-.header-green .dropdown-menu {
-    background-color: #c4edd1;
-}
-
-.header-green .dropdown-menu li a {
-    color: #C166C0;
-}
-
-.header-green .dropdown-menu li:hover {
-    background-color: #a9dab8;
-}
-
-/* =========================
-   DROPDOWN SHRINKING MODE
-   ========================= */
-header.shrink .dropdown-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-}
-

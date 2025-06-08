@@ -1,6 +1,9 @@
-/* =============================================================
-   CSS z: sluzby.css
-   ============================================================= */
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
 
 .hero-sluzby{
     background-image: url("images/hero-sluzby.png");
@@ -186,10 +189,6 @@ ul li{
         width: 90vw;
     }
 
-    .liceni{
-        width: 90vw;
-    }
-
     .buttons button{
         font-size: 2vw;
     }
@@ -200,6 +199,10 @@ ul li{
 
     .sluzby p{
         font-size: 2vw;
+    }
+
+    .header-pink nav{
+        width: 40vw;
     }
     
     .nadpis-sluzby{
@@ -375,4 +378,4 @@ ul li{
     .header-pink.shrink nav{
         width: 85%;
     }
-}
+} 

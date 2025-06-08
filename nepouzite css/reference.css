@@ -1,6 +1,3 @@
-/* =============================================================
-   CSS z: reference.css
-   ============================================================= */
 .hero-reference{
     background-image: url("images/index.png");
     width: 100%;
@@ -101,18 +98,6 @@ q {
 
     q{
         font-size: 4.5vw;
-    }
-
-    .header-pink h1{
-        display: none;
-    }
-
-    .header-pink nav{
-        width: 80%;
-    }
-
-    .header-pink.shrink nav{
-        width: 85%;
     }
 
     .recenze{

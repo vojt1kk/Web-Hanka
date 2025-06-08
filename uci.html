@@ -9,18 +9,26 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Hanina učí</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="dropdown.css">
     <link rel="stylesheet" href="uci.css">
 </head>
 <body>
     <header class="header header-green">
-        <nav class="nav-uci">
+        <div class="home">
+            <a href="index.html"><i class='bx  bx-home'  ></i></a> 
+            <a href="sluzby.html"><h1>Hanina učí</h1></a>
+        </div>
+        <nav class="nav2">
             <ul>
-                <li>
-                  <div class="home">
-                    <a href="index.html"><i class='bx bx-home'></i></a>
-                    <a href="index.html"><h1>Hanina učí</h1></a>
-                  </div>
+                <li class="dropdown">
+                    <a href="#">
+                        Líčí
+                    </a>
+                    <i class='bx  bx-caret-down'></i>
+                    <ul class="dropdown-menu">
+                        <li><a href="sluzby.html">Služby</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li><a href="reference.html">Reference</a></li>
+                    </ul>
                 </li>
                 <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
