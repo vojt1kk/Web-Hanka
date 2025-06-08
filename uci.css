@@ -18,16 +18,29 @@ body {
 /* NAVIGATION */
 .nav-uci {
     width: 100%; /* Full width to touch left edge */
-    padding: 0 5vw; /* Optional: can reduce or remove */
+}
+
+.header.shrink .nav-uci{
+    width: 45%;
+}
+
+.header.shrink .home{
+    width: fit-content;
+}
+
+header.shrink .nav-uci ul li {
+    font-size: 1.4vw;
+    transition: none;
 }
 
 .nav-uci ul {
+    width: 100vw;
     padding: 0;
     margin: 0;
     display: flex;
     align-items: center;
-    gap: 2vw;
-    justify-content: flex-start;
+    gap: 15vw;
+    justify-content: center;
     list-style: none;
 }
 
