@@ -332,6 +332,11 @@ button:hover {
     aspect-ratio: 1/1;
 }
 
+.ukazka-galerie{
+    width: 20vw;
+    aspect-ratio: 2/3;
+}
+
 .ukazka-reference{
     width: 20vw;
     aspect-ratio: 1/1;
@@ -484,6 +489,10 @@ footer{
         width: 38vw;
     }
 
+    .ukazka-galerie{
+        width: 38vw;
+    }
+
     .header-pink h1,
     .header-green h1 {
         font-size: 3.5vw;
@@ -590,6 +599,10 @@ footer{
     }
 
     .ukazka{
+        width: 77vw;
+    }
+
+    .ukazka-galerie{
         width: 77vw;
     }
 

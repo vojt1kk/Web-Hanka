@@ -1,0 +1,76 @@
+.ukazky-galerie{
+    background-color: #B38FEE;
+    width: fit-content;
+    padding: 0.8vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.8vw;
+    margin: auto;
+    margin-bottom: 15vh;
+    margin-top: 15vh;
+    position: relative;
+}
+
+.galerie-sticker{
+    width: 8vw;
+    position: absolute;
+    left: -3vw;
+    bottom: -15vh;
+    transform: rotate(-20deg);
+    border-radius: 50%;
+}
+
+.galerie-sticker2{
+    width: 6vw;
+    position: absolute;
+    right: -3vw;
+    top: -10vh;
+    transform: rotate(-20deg);
+    border-radius: 50%;
+}
+
+.nadpis-galerie{
+    margin-left: 8vw;
+    margin-top: 10vh;
+    margin-bottom: -12vh;
+}
+
+@media (max-width: 800px) and (min-width: 401px) {
+    .ukazky-galerie{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .galerie-sticker{
+        width: 17vw;
+    }
+
+    .galerie-sticker2{
+        width: 13vw;
+    }
+}
+
+@media(max-width: 400px){
+    .ukazky-galerie{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-pink h1 {
+        display: none;
+    }
+    
+    .header-pink nav {
+        width: 80%;
+    }
+    
+    .header-pink.shrink nav {
+        width: 85%;
+    }
+    
+    .galerie-sticker{
+        width: 23vw;
+    }
+    .galerie-sticker2{
+        width: 17vw;
+    }
+}
