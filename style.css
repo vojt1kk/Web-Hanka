@@ -307,9 +307,8 @@ button:hover {
     background-color: #c4edd1;
     width: fit-content;
     padding: 0.8vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 0.8vw;
     margin: auto;
     margin-bottom: 15vh;
