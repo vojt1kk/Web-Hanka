@@ -11,24 +11,6 @@
     position: relative;
 }
 
-.galerie-sticker{
-    width: 8vw;
-    position: absolute;
-    left: -3vw;
-    bottom: -15vh;
-    transform: rotate(-20deg);
-    border-radius: 50%;
-}
-
-.galerie-sticker2{
-    width: 6vw;
-    position: absolute;
-    right: -3vw;
-    top: -10vh;
-    transform: rotate(-20deg);
-    border-radius: 50%;
-}
-
 .nadpis-galerie{
     margin-left: 8vw;
     margin-top: 10vh;
@@ -38,14 +20,6 @@
 @media (max-width: 800px) and (min-width: 401px) {
     .ukazky-galerie{
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .galerie-sticker{
-        width: 17vw;
-    }
-
-    .galerie-sticker2{
-        width: 13vw;
     }
 }
 
@@ -65,12 +39,5 @@
     
     .header-pink.shrink nav {
         width: 85%;
-    }
-    
-    .galerie-sticker{
-        width: 23vw;
-    }
-    .galerie-sticker2{
-        width: 17vw;
     }
 }

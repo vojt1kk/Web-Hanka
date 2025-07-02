@@ -35,20 +35,26 @@ body {
 }
 
 /* UCENI SECTION */
-.uceni {
+.uceni{
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    align-items: center;
     background-color: #c4edd1;
     padding-left: 7vw;
     padding-right: 7vw;
     padding-top: 5vh;
     padding-bottom: 5vh;
-    height: fit-content;
-    margin-bottom: 10vh;
-    position: relative;
-    z-index: 1;
 }
 
 .uceni-nadpis {
     color: #B38FEE;
+}
+
+.uceni-fotka{
+    width: 20vw;
+    border-color: white;
+    border-style: solid;
 }
 
 /* TABLE STYLING */
@@ -109,6 +115,10 @@ q,
 
 /* RESPONSIVE STYLES */
 @media (max-width: 800px) and (min-width: 401px) {
+    .uceni-fotka{
+        width: 38vw;
+    }
+
     .uceni h2 {
         font-size: 3vw;
     }
@@ -140,8 +150,17 @@ q,
 }
 
 @media (max-width: 400px) {
+    .uceni{
+        flex-direction: column;
+    }
+
     .home {
         width: fit-content;
+    }
+
+    .uceni-fotka {
+        width: 70vw;
+        margin: 0 auto;
     }
 
     .uceni h2 {
