@@ -114,7 +114,7 @@ q,
 }
 
 /* RESPONSIVE STYLES */
-@media (max-width: 800px) and (min-width: 401px) {
+@media (max-width: 820px) and (min-width: 431px) {
     .uceni-fotka{
         width: 38vw;
     }
@@ -149,7 +149,7 @@ q,
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 430px) {
     .uceni{
         flex-direction: column;
     }
